@@ -16,6 +16,22 @@ body {
     color: #cccccc;
 }
 
+.top, .bottom {
+    display: grid;
+    grid-template: auto / repeat(8, 1fr);
+}
+
+.left, .right {
+    display: grid;
+    grid-template: repeat(8, 1fr) / auto;
+}
+
+.board span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .board {
     background-color: yellow;
     display: flex;
@@ -39,26 +55,25 @@ body {
 }
 
 .top {
-    grid-area:'top';
-
+    grid-area: top;
 }
 
 .right {
-    grid-area:'right';
+    grid-area: right;
 }
 
 .bottom {
-    grid-area:'bottom';
+    grid-area: bottom;
 }
 
 .left {
-    grid-area:'left';
+    grid-area: left;
 }
 
 
 .infield {
     display: grid;
-    grid-template-columns:50px 50px 50px 50px 50px 50px 50px 50px   ;
+    grid-template-columns:50px 50px 50px 50px 50px 50px 50px 50px;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
     grid-template-areas:
     

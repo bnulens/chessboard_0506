@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+img {
+    transform: scale(0.27);
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd000;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cccccc;
+}
+
+.board {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    
+    height: 500px;
+    width: 500px;
+    background-color: rgb(255, 230, 0);
+
+}
+
+.board {
+    display: grid;
+    grid-template-columns:50px 400px 50px;
+    grid-template-rows:50px 400px 50px;
+    grid-template-areas: 
+    ".      top         ."
+    "left infield   right"
+    ".      bottom     .";
+}
+
+span {
+    background-color: azure;
+}
+
+.top {
+    grid-area:"top";
+
+}
+
+.right {
+    grid-area:"right";
+}
+
+.bottom {
+    grid-area:"bottom";
+}
+
+.left {
+    grid-area:"left";
+}
+
+.infield {
+    display: grid;
+    grid-template-columns:50px 50px 50px 50px 50px 50px 50px 50px   ;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-areas:
+}
